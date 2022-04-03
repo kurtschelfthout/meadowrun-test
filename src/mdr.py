@@ -11,7 +11,9 @@ async def main():
             interruption_probability_threshold=15),
         Deployment.git_repo(
             "https://github.com/kurtschelfthout/meadowrun-test",
-            conda_yml_file="env.yml"
+            conda_yml_file="env.yml",
+            branch="master",
+            commit="master"
         )
     )
 
